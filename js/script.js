@@ -18,7 +18,7 @@ function animacaoAoScroll() {
     if(secoes.length) {
         const exibirSecao = () =>{
             const larguraDaTela = window.innerWidth;
-            let metadeDaTela = (larguraDaTela < 767) ? window.innerHeight * .3 : window.innerHeight * .5;
+            const metadeDaTela = (larguraDaTela < 767) ? window.innerHeight * .6 : window.innerHeight * .5;
 
             secoes.forEach((secao) => {
                 const caracteristicasDaSecao = secao.getBoundingClientRect().top;
