@@ -61,6 +61,7 @@ h1 {
 a,
 a span {
     display: block;
+    width: max-content;
     border-radius: 4px;
     text-decoration: none;
 }
@@ -483,7 +484,7 @@ a span {
         height: 50px;
         padding-right: 60px;
         padding-left: 20px;
-        transform: translate3d(200px, 0, 0);
+        transform: translate3d(290px, 0, 0);
         transition: .6s;
     }
 
@@ -493,6 +494,10 @@ a span {
 
     .redes__mobile ul li + li {
         margin-left: 20px;
+    }
+
+    .redes__mobile li a {
+        padding: 10px;
     }
 
     .redes__mobile ul svg path {
@@ -608,6 +613,10 @@ a span {
     }
 
     /* PROJETOS */
+    .secao__projetos {
+        padding-bottom: 50px;
+    }
+
     .secao__projetos .projetos__projeto figcaption {
         font-size: 12px;
         line-height: 18px;   
@@ -617,9 +626,36 @@ a span {
     .secao__projetos .projetos__aviso {
         font-size: 12px;
     }
+
+    /* FOOTER */
+    .secao__rodape {
+        display: none;
+    }
 }
 
 @media (max-width: 500px) {
+    /* GRID */
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .grid-5,
+    .grid-6,
+    .grid-7,
+    .grid-8,
+    .grid-9,
+    .grid-10,
+    .grid-11 {
+        margin-right: 0;
+    }
+
+    /* SEÇÃO HABILIDADES */
+    .secao__habilidades .habilidades__container > li:nth-child(odd),
+    .secao__habilidades .habilidades__container > li:nth-child(even) {
+        grid-template-columns: 1fr;
+    }
+
+    /* SEÇÃO APRESENTAÇÃO */
     .secao__apresentacao {
         background-image: url('../imagens/imagem-de-fundo-mobile.png');
         background-position: center right;
