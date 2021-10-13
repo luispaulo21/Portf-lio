@@ -1,0 +1,65 @@
+.container {
+    max-width: 930px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11 {
+    margin-right: 30px;
+}
+
+.grid-1 {
+    max-width: 50px;
+}
+
+.grid-2 {
+    max-width: 130px;
+}
+
+.grid-3 {
+    max-width: 210px;
+}
+
+.grid-4 {
+    max-width: 290px;
+}
+
+.grid-5 {
+    max-width: 370px;
+}
+
+.grid-6 {
+    max-width: 450px;
+}
+
+.grid-7 {
+    max-width: 528px;
+}
+
+.grid-8 {
+    max-width: 610px;
+}
+
+.grid-9 {
+    max-width: 690px;
+}
+
+.grid-10 {
+    max-width: 770px;
+}
+
+.grid-11 {
+    max-width: 850px;
+}

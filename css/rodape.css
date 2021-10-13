@@ -1,0 +1,9 @@
+/* SEÇÃO RODAPÉ */
+.secao__rodape {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.secao__rodape ul {
+    margin: 0 auto;
+}

@@ -1,0 +1,151 @@
+@font-face {
+    font-family: Montserrat;
+    src: local(Montserrat-Regular), url(../fontes/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat Black";
+    src: local(Montserrat-Black), url(../fontes/Montserrat-Black.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat Medium";
+    src: local(Montserrat-Medium), url(../fontes/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat Italic";
+    src: local(Montserrat-Italic), url(../fontes/Montserrat-Italic.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat SemiBold";
+    src: local(Montserrat-SemiBold), url(../fontes/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: local(Montserrat-Bold), url(../fontes/Montserrat-Bold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #E5E6E8;    
+}
+
+body {
+    font-family: Montserrat, 'Times New Roman', Times, serif;
+    background-color: #0C0E17;
+}
+
+:root {
+    --corDeFundo-botoes: #3D5AFE;
+    --gradiente-esquerdaParaDireita: hsla(231, 98%, 62%, 1),
+    hsla(231, 99%, 62%, 0);
+    --gradiente-profissao: hsla(231, 99%, 62%, 1),
+    hsla(288, 92%, 65%, 1);
+    --gradiente-imagensDosProjetos: hsla(229, 31%, 7%, 1),
+    hsla(240, 33%, 1%, 0);
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 54px;
+    font-family: "Montserrat Black";
+}
+
+
+a,
+a span {
+    display: block;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* ESTILOS GERAIS */
+.js .anim {
+    transform: translate3d(-30px, 0, 0);
+    opacity: 0;
+    transition: 1s;
+}
+
+.js .anim.ativo {
+    opacity: 1;
+    transform: translate3d(0px, 0, 0);
+}
+
+.redes__sociais {
+    display: flex;
+    align-items: center;
+    width: max-content;
+}
+
+.redes__sociais li + li {
+    margin-left: 10px;
+}
+
+.redes__sociais a span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21px;
+    height: 21px;
+    background-image: linear-gradient(to right, var(--gradiente-esquerdaParaDireita));
+    transition: .6s;
+}
+
+.redes__sociais a:hover span,
+.secao__apresentacao .apresentacao__servicos:hover span,
+.secao__projetos .projetos__projeto a:hover,
+.secao__entreEmContato a:hover {
+    animation: animacaoGradiente 2s infinite linear;
+}
+
+@keyframes animacaoGradiente {
+    0% {
+        background-image: linear-gradient(0deg, hsla(231, 99%, 62%, 1), 
+        hsla(288, 92%, 65%, 1));
+    }
+
+    12% {
+        background-image: linear-gradient(45deg, hsla(231, 99%, 62%, 1), 
+        hsla(288, 92%, 65%, 1));
+    }
+
+    25% {
+        background-image: linear-gradient(90deg, hsla(231, 99%, 62%, 1), 
+        hsla(288, 92%, 65%, 1));
+    }
+
+    37% {
+        background-image: linear-gradient(135deg, hsla(231, 99%, 62%, 1), 
+        hsla(288, 92%, 65%, 1));
+    }
+
+    50% {
+        background-image: linear-gradient(180deg, hsla(231, 99%, 62%, 1), 
+        hsla(288, 92%, 65%, 1));
+    }
+
+    63% {
+        background-image: linear-gradient(225deg, hsla(231, 99%, 62%, 1), 
+        hsla(288, 92%, 65%, 1)); 
+    }
+
+    75% {
+        background-image: linear-gradient(270deg, hsla(231, 99%, 62%, 1), 
+        hsla(288, 92%, 65%, 1));
+    }
+
+    87% {
+        background-image: linear-gradient(315deg, hsla(231, 99%, 62%, 1), 
+        hsla(288, 92%, 65%, 1));
+    }
+
+    100% {
+        background-image: linear-gradient(360deg, hsla(231, 99%, 62%, 1), 
+        hsla(288, 92%, 65%, 1));
+    }
+}

@@ -1,0 +1,175 @@
+@media (max-width: 767px) {
+    /* GERAL */
+    .redes__sociais {
+        display: none;
+    }
+
+    .redes__mobile {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        overflow: hidden;
+    }
+
+    .redes__mobile,
+    .redes__mobile ul {
+        border-radius: 24px;
+    }
+
+    .redes__mobile,
+    .redes__mobile ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .redes__mobile ul {
+        background: var(--corDeFundo-botoes);
+        height: 50px;
+        padding-right: 60px;
+        padding-left: 20px;
+        transform: translate3d(200px, 0, 0);
+        transition: .6s;
+    }
+
+    .redes__mobile ul.ativo {
+        transform: translate3d(45px, 0, 0);
+    }
+
+    .redes__mobile ul li + li {
+        margin-left: 20px;
+    }
+
+    .redes__mobile ul svg path {
+        fill: #E5E6E8;
+    }
+
+    .redes__mobile button {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        border-radius: 50%;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        background-color: var(--corDeFundo-botoes);
+        cursor: pointer;
+        transition: .6s;
+    }
+
+    .redes__mobile button.ativo {
+        transform: rotate(45deg);
+        box-shadow: 0px 0px 10px #272f5e;
+    }
+
+    .redes__mobile button span {
+        display: block;
+        width: 25px;
+        height: 5px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        background-color: #E5E6E8;
+        border-radius: 12px;
+    }
+
+    .redes__mobile button span:last-child {
+        transform: translate3d(-50%, -50%, 0) rotate(90deg);
+
+    }
+
+
+    /* HEADER */
+    .secao__apresentacao {
+        position: relative;
+        height: 400px;
+    }
+
+    .secao__apresentacao .apresentacao__nome {
+        padding-top: 0;
+    }
+
+    .secao__apresentacao .apresentacao__servicos {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .secao__apresentacao .apresentacao__cargo {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    /* SOBRE */
+    .secao__sobre p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    /* HABILIDADES */
+    .secao__habilidades .habilidades__container > li {
+        grid-template-rows: 45px 35px auto;
+    }
+
+    .secao__habilidades .habilidades__container figcaption {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .secao__habilidades .habilidades__container > li:nth-child(odd) {
+        grid-template-columns: 70px 100px 199px;
+    }
+
+    .secao__habilidades .habilidades__container > li:nth-child(even) {
+        grid-template-columns: 199px 67px 100px;
+    }
+
+    .secao__habilidades .habilidades__container ul li {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .secao__habilidades .habilidades__container ul li + li {
+        padding-top: 5px;
+    }
+
+    .secao__entreEmContato {
+        max-width: 255px;
+    }
+
+    .secao__entreEmContato p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .secao__entreEmContato a {
+        margin-top: 20px;
+    }
+
+    /* PROJETOS */
+    .secao__projetos .projetos__projeto figcaption {
+        font-size: 12px;
+        line-height: 18px;   
+    }
+
+    .secao__projetos .projetos__projeto a,
+    .secao__projetos .projetos__aviso {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .secao__apresentacao {
+        background-image: url('../imagens/imagem-de-fundo-mobile.png');
+        background-position: center right;
+    }
+
+    .secao__habilidades .habilidades__container > li + li {
+        padding-top: 50px;
+    }
+}
