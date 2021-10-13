@@ -280,6 +280,7 @@ a span {
 .secao__habilidades .habilidades__container {
     display: flex;
     flex-direction: column;
+    align-items: baseline;
     padding-top: 70px;
 }
 
